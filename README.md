@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/24dc7cac-68c5-4ea7-92d8-c72e918a736f)# Task Manager Monitoring
+# Task Manager Monitoring
 
 Этот проект представляет собой бэкенд-сервис для управления задачами с настройкой мониторинга с использованием **Prometheus** и **Grafana**. Проект включает все необходимые компоненты, такие как база данных **PostgreSQL**, конфигурации мониторинга и графический дашборд.
 
