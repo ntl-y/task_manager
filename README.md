@@ -25,7 +25,7 @@ docker-compose up --build
    ```
 
 2. **Проверить метрики**:
-   Перейдите по адресу: `http://localhost:8889/metrics`. Вы увидите экспортированные метрики.
+   Перейдите по адресу: `http://localhost:8889/metrics`.
 
 3. **Prometheus**:
    Откройте `http://localhost:9090`, выполните запрос:
