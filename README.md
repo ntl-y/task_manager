@@ -35,7 +35,8 @@ docker-compose up --build
 
 4. **Grafana**:
    - Войдите в Grafana (`http://localhost:3000`).
-   - **Общее количество созданных задач** (`task_manager_tasks_created_total`), сгруппированное по статусу.
-   - **Продолжительность создания задач** (`task_manager_task_creation_duration_seconds`), с отображением 95-го перцентиля.
+   - **Общее количество созданных задач** (`task_manager_tasks_created_total`), сгруппированное по статусу. `rate(task_manager_tasks_created_total[$__rate_interval])`
+   - **Продолжительность создания задач** (`task_manager_task_creation_duration_seconds`), с отображением 95-го перцентиля. `histogram_quantile(0.95, sum(rate(task_manager_task_creation_duration_seconds_bucket[5m])) by (le, status))
+`
 
 ![Grafana Dashboard](https://github.com/user-attachments/assets/3b3e3a1d-c4bc-49fb-9cff-a0b486da89b9)
