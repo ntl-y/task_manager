@@ -21,7 +21,7 @@ func (h *Handler) createTask(c *gin.Context) {
 	}
 
 	if input.Title == "" || input.Describtion == "" {
-		newErrorResponse(c, http.StatusInternalServerError, "empty title or describtion")
+		newErrorResponse(c, http.StatusUnprocessableEntity, "empty title or describtion")
 		return
 	}
 

@@ -1,0 +1,29 @@
+{
+    "dashboard": {
+      "id": null,
+      "title": "Task Manager Metrics",
+      "panels": [
+        {
+          "title": "Total Tasks Created",
+          "type": "stat",
+          "targets": [
+            {
+              "expr": "tasks_created_total",
+              "refId": "A"
+            }
+          ]
+        },
+        {
+          "title": "Task Creation Duration",
+          "type": "graph",
+          "targets": [
+            {
+              "expr": "task_creation_duration_seconds_bucket",
+              "refId": "B"
+            }
+          ]
+        }
+      ]
+    }
+  }
+  
