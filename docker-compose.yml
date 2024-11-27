@@ -51,6 +51,7 @@ services:
     restart: always
     ports:
       - "8888:8888"
+      - "8889:8889"
     env_file:
       - ./configs/.env
     networks:
